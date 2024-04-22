@@ -1,0 +1,161 @@
+@use "_variables" as variables;
+@use "_fonts" as fonts;
+@use "_mixin" as mixin;
+
+//Global
+
+* {
+    padding: variables.$padding-start;
+    margin: variables.$margin-start;
+    box-sizing: variables.$bx-sizing;
+    font-size: variables.$defaultFontSize;
+
+}
+
+body {
+    background-image: url(../img/cleo-topper.jpg);
+    @include mixin.backgroundImg(100%,100%);
+    background-attachment: fixed;
+}
+
+header {
+    @include mixin.flexRow;
+    gap: 10px;
+    padding: 10px;
+    img {
+        @include mixin.imgSize(1%,1%);
+    }
+}
+
+main {
+    padding: variables.$main-padding;
+    .hero {
+        h1{
+            font-size: variables.$main-h1Size;
+            color: variables.$mainSectionColorWeis;
+            font-family: fonts.$fontInterBold;
+            width: 150px;
+            text-transform: variables.$text-transform;
+            margin-bottom: 5%;
+        }
+        p {
+            color: variables.$mainSectionColorGelb;
+            font-size: variables.$defaultFontSize;
+            font-family: fonts.$fontMrDafoe;
+            margin-bottom: variables.$main-margin-bottom;
+        }
+    }
+    .sectionOne {
+        .storyOne {
+            font-size: 24px;
+            margin-bottom: variables.$main-margin-bottom;
+            p{
+                color: variables.$mainSectionColorGrün;
+                padding: variables.$main-padding;
+                width: 40vw;
+
+                .span1{
+                    color: variables.$mainSectionColorWeis;
+                    background-color: variables.$mainBgColor;
+                }
+            }
+
+        }
+        .workers {
+            margin-left: 30vw;
+            @include mixin.flexColumn;
+            text-transform: variables.$text-transform;
+            margin-bottom: 30%;
+            img {
+                @include mixin.imgSize(7%,7%);
+                padding: 5px 0;
+            }
+            h2 {
+                font-size: variables.$main-h2Size;
+                color: variables.$mainSectionColorGelb;
+                width: 20vw;
+                font-family: fonts.$fontSantio;
+                padding: 5px 0;
+            }
+            p {
+                color: variables.$mainSectionColorGelb;
+                width: 25vw;
+                padding: 5px 0;
+                span {
+                    color: variables.$mainSectionColorWeis;
+                    background-color: variables.$mainBgColor;
+                }
+            }
+        }
+        .pay {
+            margin-left: 30vw;
+            @include mixin.flexColumn;
+            text-transform: variables.$text-transform;
+            margin-bottom: 30%;
+            img {
+                @include mixin.imgSize(7%,7%);
+                padding: 5px 0;
+            }
+            p {
+                padding: 5px 0;
+                color: variables.$mainSectionColorPink;
+                span {
+                    color: variables.$mainSectionColorWeis;
+                    background-color: variables.$mainBgColor;
+                }
+            }
+            h2 {
+                font-size: variables.$main-h1Size;
+                color: variables.$mainSectionColorPink;
+                padding: 5px 0;
+            }
+        }
+        .health {
+            margin-left: 30vw;
+            @include mixin.flexColumn;
+            text-transform: variables.$text-transform;
+            margin-bottom: 30%;
+            font-family: fonts.$fontSantio;
+            img {
+                @include mixin.imgSize(7%,7%);
+                padding: 5px 0;
+            }
+            p {
+                padding: 5px 0;
+                color: variables.$mainSectionColorGrün;
+                span {
+                    color: variables.$mainSectionColorWeis;
+                    background-color: variables.$mainBgColor;
+                }
+            }
+            h2 {
+                font-size: variables.$main-h1Size;
+                color: variables.$mainSectionColorGrün;
+                font-family: fonts.$fontSantio;
+                padding: 5px 0;
+            }
+        }
+        .storyTwo {
+            margin-left: 25vw;
+            font-size: 24px;
+            margin-bottom: variables.$main-margin-bottom;
+            p{
+                color: variables.$mainSectionColorBlau;
+                padding: variables.$main-padding;
+                width: 30vw;
+                span{
+                    color: variables.$mainSectionColorWeis;
+                    background-color: variables.$mainBgColor;
+                }
+            }
+
+        }
+    }
+    .sectionTwo {
+        background-image: url(../img/see.png);
+        @include mixin.backgroundImg(150%,150%);
+        img {
+            @include mixin.backgroundImg(100%,100%);
+        }
+    }
+}

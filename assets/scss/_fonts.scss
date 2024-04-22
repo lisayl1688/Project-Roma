@@ -1,0 +1,25 @@
+@font-face {
+    font-family: roboto;
+    src: url(../font/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: interBold;
+    src: url(../font/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: mrDafoe;
+    src: url(../font/MrDafoe-Regular.ttf);
+}
+
+@font-face {
+    font-family: santio;
+    src: url(../font/Santio\ regular.ttf);
+
+}
+
+$fontRoboto: roboto;
+$fontInterBold: interBold;
+$fontMrDafoe: mrDafoe;
+$fontSantio: santio;

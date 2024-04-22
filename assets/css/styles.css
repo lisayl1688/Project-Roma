@@ -1,0 +1,188 @@
+@font-face {
+  font-family: roboto;
+  src: url(../font/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: interBold;
+  src: url(../font/Inter-Bold.ttf);
+}
+@font-face {
+  font-family: mrDafoe;
+  src: url(../font/MrDafoe-Regular.ttf);
+}
+@font-face {
+  font-family: santio;
+  src: url(../font/Santio\ regular.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  background-image: url(../img/cleo-topper.jpg);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 10px;
+}
+header img {
+  width: 1%;
+  height: 1%;
+}
+
+main {
+  padding: 10%;
+}
+main .hero h1 {
+  font-size: 48px;
+  color: #FFFFFF;
+  font-family: interBold;
+  width: 150px;
+  text-transform: uppercase;
+  margin-bottom: 5%;
+}
+main .hero p {
+  color: #E7BC0E;
+  font-size: 16px;
+  font-family: mrDafoe;
+  margin-bottom: 10%;
+}
+main .sectionOne .storyOne {
+  font-size: 24px;
+  margin-bottom: 10%;
+}
+main .sectionOne .storyOne p {
+  color: #6BC1A3;
+  padding: 10%;
+  width: 40vw;
+}
+main .sectionOne .storyOne p .span1 {
+  color: #FFFFFF;
+  background-color: rgba(51, 51, 51, 0.7529411765);
+}
+main .sectionOne .workers {
+  margin-left: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10%;
+  text-transform: uppercase;
+  margin-bottom: 30%;
+}
+main .sectionOne .workers img {
+  width: 7%;
+  height: 7%;
+  padding: 5px 0;
+}
+main .sectionOne .workers h2 {
+  font-size: 64px;
+  color: #E7BC0E;
+  width: 20vw;
+  font-family: santio;
+  padding: 5px 0;
+}
+main .sectionOne .workers p {
+  color: #E7BC0E;
+  width: 25vw;
+  padding: 5px 0;
+}
+main .sectionOne .workers p span {
+  color: #FFFFFF;
+  background-color: rgba(51, 51, 51, 0.7529411765);
+}
+main .sectionOne .pay {
+  margin-left: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10%;
+  text-transform: uppercase;
+  margin-bottom: 30%;
+}
+main .sectionOne .pay img {
+  width: 7%;
+  height: 7%;
+  padding: 5px 0;
+}
+main .sectionOne .pay p {
+  padding: 5px 0;
+  color: #CB91B6;
+}
+main .sectionOne .pay p span {
+  color: #FFFFFF;
+  background-color: rgba(51, 51, 51, 0.7529411765);
+}
+main .sectionOne .pay h2 {
+  font-size: 48px;
+  color: #CB91B6;
+  padding: 5px 0;
+}
+main .sectionOne .health {
+  margin-left: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10%;
+  text-transform: uppercase;
+  margin-bottom: 30%;
+  font-family: santio;
+}
+main .sectionOne .health img {
+  width: 7%;
+  height: 7%;
+  padding: 5px 0;
+}
+main .sectionOne .health p {
+  padding: 5px 0;
+  color: #6BC1A3;
+}
+main .sectionOne .health p span {
+  color: #FFFFFF;
+  background-color: rgba(51, 51, 51, 0.7529411765);
+}
+main .sectionOne .health h2 {
+  font-size: 48px;
+  color: #6BC1A3;
+  font-family: santio;
+  padding: 5px 0;
+}
+main .sectionOne .storyTwo {
+  margin-left: 25vw;
+  font-size: 24px;
+  margin-bottom: 10%;
+}
+main .sectionOne .storyTwo p {
+  color: #7EB8E1;
+  padding: 10%;
+  width: 30vw;
+}
+main .sectionOne .storyTwo p span {
+  color: #FFFFFF;
+  background-color: rgba(51, 51, 51, 0.7529411765);
+}
+main .sectionTwo {
+  background-image: url(../img/see.png);
+  width: 150%;
+  height: 150%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .sectionTwo img {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,30 @@
+
+@mixin flexRow {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10%;
+}
+
+@mixin textStyle($font-size,$color) {
+    font-size: $font-size;
+    color: $color;
+}
+
+@mixin backgroundImg($width,$height){
+    width: $width;
+    height: $height;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin imgSize($width,$height) {
+    width: $width;
+    height: $height;
+}
